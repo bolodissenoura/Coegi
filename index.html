@@ -152,21 +152,21 @@
 
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="2" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="2" class="purecounter"></span>
               <p>Clientes Satisfeitos</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="2" class="purecounter"></span>
-              <p>Projetos</p>
+              <span data-purecounter-start="0" data-purecounter-end="43" data-purecounter-duration="2" class="purecounter"></span>
+              <p>Projetos de melhoria</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="2" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="06" data-purecounter-duration="2" class="purecounter"></span>
               <p>Anos de mercado</p>
             </div>
           </div>
@@ -183,42 +183,7 @@
       </div>
     </section><!-- End Counts Section -->
 
-    
-
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Clients Section -->
+     
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
@@ -347,7 +312,7 @@
         <div class="text-center">
           <h3>Ser coegi é ser Smart !</h3>
           <p> Ainda com alguma dúvida de como podemos ajudar o seu negócio ? Não exite em nos mandar menssagem, adoraremos conversar sobre todas suas perguntas !</p>
-          <a class="cta-btn" href="#">Fale conosco</a>
+          <a class="cta-btn" href="#contact">Fale conosco</a>
         </div>
       </div>
     </section><!-- End Cta Section -->
@@ -403,7 +368,7 @@
             <div class="text-center">
               <h3>Seu negócio está com um problema mas você ainda não sabe identificar ?</h3>
               <p> Ainda com alguma dúvida de como ser ajudado ? Estamos aqui 24 horas para encontrar seus problemas e conseguir resolvê-los o mis rápido possível !</p>
-              <a class="cta-btn" href="#">Quero ser ajudado!</a>
+              <a class="cta-btn" href="#contact">Quero ser ajudado!</a>
             </div>
           </div>
         </section><!-- End Cta Section -->
@@ -454,10 +419,11 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="https://api.staticforms.xyz/submit" method="post" role="form" >
               <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome" required>
+                <div class="col-md-6 form-group mt-3 mt-md-3">
+                  <input type="hidden" name="accessKey" value="d21e7327-e731-4367-bee1-f17b40ae206f">
+                  <input type="name" name="name" class="form-control" id="name" placeholder="Seu nome" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-3">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" required>
@@ -469,12 +435,8 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Mandar Mensagem</button></div>
+              <input type="hidden" name="redirectTo" value="https://coegi.com.br">
+              <div class="text-center"><input style="background-color: #2487CE;border-color: #2487CE; margin-top: 20px;border-radius: 30px; width: 300px;" type="submit" value="Enviar" /></div>
             </form>
 
           </div>
